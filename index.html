@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <h1 class="Tittel" >Hvordan lage et lett nettverk i Cisco Packet Tracer</h1>
+    <h1 class="Tittel">Hvordan lage et lett nettverk i Cisco Packet Tracer</h1>
     <p>I denne brukerveiledningen lærer du hvordan du setter opp et lite nettverk med to PC-er og en switch, slik at de kan kommunisere med hverandre.</p>
   </header>
 
@@ -16,7 +16,7 @@
     <section>
       <h2>Forutsetninger</h2>
       <ul>
-        <li> Du har installert <a href="https://www.netacad.com/courses/getting-started-cisco-packet-tracer?courseLang=en-US"> Cisco Packet Tracer</a> </li>
+        <li>Du har installert <a href="https://www.netacad.com/courses/getting-started-cisco-packet-tracer?courseLang=en-US">Cisco Packet Tracer</a></li>
         <li>Du kjenner til IP-adresser og subnett</li>
       </ul>
     </section>
@@ -25,49 +25,49 @@
       <h2>Trinn-for-trinn</h2>
 
       <article class="step">
-  <h3>1. Åpne Packet Tracer</h3>
-  <p>Start programmet og åpne et nytt prosjekt. Da vil du se en nesten helt tom skjerm, dette er riktig</p>
-  <img src="steg1.png" alt="Packet Tracer startskjerm" class="step-img">
-</article>
+        <h3>1. Åpne Packet Tracer</h3>
+        <p>Start programmet og åpne et nytt prosjekt. Da vil du se en nesten helt tom skjerm, dette er riktig.</p>
+        <img src="steg1.png" alt="Packet Tracer startskjerm" class="step-img">
+      </article>
 
-<article class="step">
-  <h3>2. Legg til utstyr</h3>
-  <ul>
-    <li>Finn kategorien <b>End Devices</b> og dra inn to PC-er.</li>
-    <li>Gå til <b>Switches</b> og dra inn én 2960-switch.</li>
-  </ul>
-  <img src="bilder/steg2.png" alt="Legge til PC og switch i Packet Tracer" class="step-img">
-</article>
+      <article class="step">
+        <h3>2. Legg til utstyr</h3>
+        <ul>
+          <li>Finn kategorien <b>End Devices</b> og dra inn to PC-er.</li>
+          <li>Gå til <b>Switches</b> og dra inn én 2960-switch.</li>
+        </ul>
+        <img src="steg2.png" alt="Legge til PC og switch i Packet Tracer" class="step-img">
+      </article>
 
-<article class="step">
-  <h3>3. Koble enhetene</h3>
-  <ol>
-    <li>Velg <b>Connections</b> (lyn-ikonet)</li>
-    <li>Velg <b>Copper Straight-Through</b> kabel</li>
-    <li>Koble PC0 → FastEthernet0/1 på switchen</li>
-    <li>Koble PC1 → FastEthernet0/2 på switchen</li>
-  </ol>
-  <img src="bilder/steg3.png" alt="Koble PC-er og switch med kabler" class="step-img">
-</article>
+      <article class="step">
+        <h3>3. Koble enhetene</h3>
+        <ol>
+          <li>Velg <b>Connections</b> (lyn-ikonet)</li>
+          <li>Velg <b>Copper Straight-Through</b> kabel</li>
+          <li>Koble PC0 → FastEthernet0/1 på switchen</li>
+          <li>Koble PC1 → FastEthernet0/2 på switchen</li>
+        </ol>
+        <img src="steg3.png" alt="Koble PC-er og switch med kabler" class="step-img">
+      </article>
 
-<article class="step">
-  <h3>4. Konfigurer IP-adresser</h3>
-  <ul>
-    <p>For å konfigurere ip-adresser, dobbleklikk på en av pc-ene, gå til den tredje tabben (dekstop) og klikk på IP configuration</p>
-    <li>PC0 → IP: <code>192.168.1.10</code>, Mask: <code>255.255.255.0</code></li>
-    <li>PC1 → IP: <code>192.168.1.11</code>, Mask: <code>255.255.255.0</code></li>
-  </ul>
-  <img src="bilder/steg4.png" alt="Konfigurere IP-adresse på PC" class="step-img">
-</article>
+      <article class="step">
+        <h3>4. Konfigurer IP-adresser</h3>
+        <ul>
+          <p>For å konfigurere IP-adresser, dobbeltklikk på en av PC-ene, gå til den tredje fanen (Desktop) og klikk på IP Configuration.</p>
+          <li>PC0 → IP: <code>192.168.1.10</code>, Mask: <code>255.255.255.0</code></li>
+          <li>PC1 → IP: <code>192.168.1.11</code>, Mask: <code>255.255.255.0</code></li>
+        </ul>
+        <img src="steg4.png" alt="Konfigurere IP-adresse på PC" class="step-img">
+      </article>
 
-<article class="step">
-  <h3>5. Test forbindelsen</h3>
-  <p>Åpne <b>Command Prompt</b> i desktop tabben på PC0 og skriv:</p>
-  <code>ping 192.168.1.11</code>
-  <p>Hvis alt fungerer får du melding om “Reply from 192.168.1.11”.</p>
-  <img src="bilder/steg5.png" alt="Ping-test i Packet Tracer" class="step-img">
-</article>
-
+      <article class="step">
+        <h3>5. Test forbindelsen</h3>
+        <p>Åpne <b>Command Prompt</b> i Desktop-fanen på PC0 og skriv:</p>
+        <code>ping 192.168.1.11</code>
+        <p>Hvis alt fungerer får du melding om “Reply from 192.168.1.11”.</p>
+        <img src="steg5.png" alt="Ping-test i Packet Tracer" class="step-img">
+      </article>
+    </section>
 
     <section>
       <h2>Feilsøking</h2>
@@ -79,12 +79,12 @@
 
     <section>
       <h2>Oppsummering</h2>
-      <p>Du har nå laget et fungerende lite LAN i Packet Tracer. Du kan legge til flere pc-er og endre på alt av instillinger</p>
+      <p>Du har nå laget et fungerende lite LAN i Packet Tracer. Du kan legge til flere PC-er og endre på alt av innstillinger.</p>
     </section>
   </main>
 
   <footer>
-    <p>Laget av Håkon OD-dagen 2025</p>
+    <p>Laget av Håkon – OD-dagen 2025</p>
   </footer>
 </body>
 </html>
